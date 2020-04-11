@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Help Animals a Home</title>
+<link href="index.css" type="text/css" rel="stylesheet" >
+</head>
+
+<body>
+    <div id="header">
+        <h1>CANADA ANIMALS HELP CENTER</h1>
+        <p>Help Homeless Animals from today...</p>
+        <a href="#section2">Find what you want for Animals</a>
+    </div>
+
+
+<div id = "section2">
+    <div id = "func1">
+    <form action="spca.php" method="POST">
+    
+    <table>
+        <h3>FIND ALL ANIMAL INFO. in a SPCA Location</h3>
+        <tr>
+            <td>SPCA Location:</td>
+            <td><input type="text" placeholder= "Enter the Name of the SPCA location..." name="SPCA_branch"></td>   
+            <td style="color: #00bfff;">(e.g. Ontario SPCA)</td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td><input type="submit" value="Search"></td>
+        </tr>
+    </table>
+
+    </form>
+</div>
+
+<div id = "func2">
+<form action="driver.php" method="POST">
+    <table>
+        <h3>FIND ALL DRIVER INFO. in a Rescue Organization</h3>
+        <tr>
+            <td>Rescue Organization:</td>
+            <td><input type="text" placeholder= "Enter the Name of the Rescurer organization..." name="rescurer_name"></td>
+            <td style="color: #00bfff;">(e.g. Animal Care)</td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td><input type="submit" value="Search"></td>
+        </tr>
+    </table>
+
+</form>
+</div>
+
+<div id = "func4">
+<form action="donateAmount.php" method="POST">
+    <table>
+        <h3>SEARCH the TOTAL DONATE AMOUNT in 2018 to a Selected Organization</h3>
+        <tr>
+            <td>Select Your Organization:</td>
+            <td>
+            <select onchange="option(this.value)">
+                <option value="SPCA">SPCA</option>
+                <option value="Rescurer">Rescurer</option>
+                <option value="Shelter">Shelter</option>   
+            </select>
+        </td>
+        </tr>
+        <tr id="patent1" style="display: none;">
+            <td>SPCA Location:</td>
+            <td><input type="text" placeholder= "Enter the Name of the SPCA..." name="SPCA_name"></td>
+            <td style="color: #00bfff;">(e.g. Ontario SPCA)</td> 
+            <td><input type="submit" value="Search"></td>
+        </tr>
+        <tr id="patent2" style="display: none;">
+            <td>Rescurer Location:</td>
+            <td><input type="text" placeholder= "Enter the Name of the Rescurer organization..."name="rescurer_name"></td>
+            <td style="color: #00bfff;">(e.g. Animal Care)</td> 
+            <td><input type="submit" value="Search"></td>
+        </tr>
+        <tr id="patent3" style="display: none;">
+            <td>Shelter Location:</td>
+            <td><input type="text" placeholder= "Enter the Name of the Shelter..." name="shelter_name"></td>
+            <td style="color: #00bfff;">(e.g. Bunny Home)</td> 
+            <td><input type="submit" value="Search"></td>
+        </tr>  
+    </table>
+</form> 
+</div>
+
+
+<div id = "func3">
+<form action="donator.php" method="POST">
+    <table>
+        <h3>SEARCH DONOR INFO. with a Given Donator Name</h3>
+        <tr>
+            <td>Donator First Name:</td>
+            <td><input type="text" placeholder= "Enter the First Name of the Donator..." name="donator_fname"></td>
+            <td style="color: #00bfff;">(e.g. Sunny)</td> 
+        </tr>
+        <tr>
+            <td>Donator Last Name:</td>
+            <td><input type="text" placeholder= "Enter the Last Name of the Donator..." name="donator_lname"></td>
+            <td style="color: #00bfff;">(e.g. Yang)</td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td><input type="submit" value="Search"></td>
+        </tr>
+    </table>
+</form>
+</div>
+
+</div> 
+
+
+<script>   
+    function option(id){   
+        if(id=="SPCA"){   
+             eval("patent1.style.display=\"\";");  
+             eval("patent2.style.display=\"none\";");
+             eval("patent3.style.display=\"none\";");
+            }   
+       else if (id =="Rescurer"){
+            eval("patent2.style.display=\"\";"); 
+            eval("patent3.style.display=\"none\";");
+            eval("patent1.style.display=\"none\";");
+            }  
+       
+       else{   
+             eval("patent3.style.display=\"\";");
+             eval("patent1.style.display=\"none\";");
+             eval("patent2.style.display=\"none\";");
+            }   
+    }   
+    </script>   
+
+<div id="footer">
+    <p>Group 60 Final Project</p>
+    <p>Copyright 2020 </p>
+</div>
+
+</body>
+</html> 

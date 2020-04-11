@@ -1,0 +1,63 @@
+table, th, td {
+    background-color: #e8e6e3;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "Gill Sans MT";
+}
+
+
+#header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    font-family: "Gill Sans MT";
+  }
+
+  #footer {
+    padding: 18px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-family: "Gill Sans MT";
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #section2 h3{
+      color: black;
+      font-family: "Gill Sans MT";
+      text-align: center;
+      font-size: 28px;
+  }
+
+  #section2 table td{
+    padding: 16px;
+  }
+
+  #func1, #func2, #func3, #func4{
+      background-color: #e8e6e3;
+      margin-top: 3%;
+
+  }
+
+  input[type="text"] {
+    font-size:20px;
+    width: 500px;
+  }
+
+  input[type="submit"] {
+    font-size:22px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: white;
+  }
+
+  select{
+      font-size: 20px;
+  }
